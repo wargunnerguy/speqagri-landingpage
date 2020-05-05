@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100516196-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100516196-6');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="SPEQ Agri"
+          content="Teostame põllumajandusteenuseid, kaevetöid, haljastustöid, lumetõrjet, tõstetöid, transporditeenust, purgimisteenust, renditeenust">
+    <meta name="theme-color" content="#222222"/>
+    <meta name="description" content="Teostame Järvamaal lumetõrjet, tõstetöid, kaevetöid, haljastustöid ning pakume ka transporditeenust, purgimisteenust põllumajandusteenuseid ja erinevaid renditeenuseid. Võta ühendust: +372 452 2002, agri@speq.ee" />
+    <title>SPEQ Agri</title>
+
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!-- Required Stylesheets -->
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/color/default.css" rel="stylesheet">
+    <!-- Required scripts -->
+    <script src="assets/js/vue.min.js"></script>
+    <script src="assets/js/vue-i18n.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.localScroll.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/jquery.flexslider.js"></script>
+    <script src="assets/js/inview.js"></script>
+    <script src="assets/js/animate.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/lang/messages.js"></script>
+    <script src="contactform.php"></script>
+    <script src="components/navbar.js"></script>
+
+</head>
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/et_EE/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="109635857069303"
+     logged_in_greeting="Tere, oled vist eksinud! Kirjuta meile, proovime aidata :)"
+     logged_out_greeting="Tere, oled vist eksinud? Kirjuta meile, proovime aidata :)"
+     greeting_dialog_delay=0>
+</div>
+<div id="app">
+    <!-- navbar -->
+    <navbar></navbar>
+    <!-- Header area -->
+    <div id="header-wrapper" class="header-slider">
+        <header class="clearfix">
+            <div class="logo">
+                <img src="assets/img/logo-image-speq-agri.png" alt=""/>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div id="main-flexslider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.landscaping_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.winding_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.transport_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.excavation_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.telehandler_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.rental_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.agricultural_service_html')"/>
+                                </li>
+                                <li>
+                                    <p class="home-slide-content" v-html="$t('message.snow_removal_service_html')"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end slider -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <section class="section orange">
+        <div class="container">
+            <div id="job_vacancies_box" class="well well-large section green joboffer">
+                <!--<h4>{{$t("message.we_offer_work_to")}}{{$t("message.to_truck_driver")}}</h4>-->
+                <h4>{{ $t("message.error_404") }}</h4>
+                <div class="row">
+                    <div class="span11 text-center">
+                        <button onclick="location.href='index.php'" class="btn btn-theme">{{$t("message.back_to_homepage")}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Start running your app -->
+<script>
+    window.app = new Vue({
+        i18n,
+        el: "#app",
+        data: {
+            name: ''
+        },
+        computed: {
+            showAlert() {
+                return this.name.length > 4 ? true : false;
+            }
+        }
+    });
+</script>
+    <?php function auto_copyright($year = 'auto'){ ?>
+        <?php if(intval($year) == 'auto'){ $year = date('Y'); } ?>
+        <?php if(intval($year) == date('Y')){ echo intval($year); } ?>
+        <?php if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); } ?>
+        <?php if(intval($year) > date('Y')){ echo date('Y'); } ?>
+    <?php } ?>
+</body>
+</html>
