@@ -1,22 +1,10 @@
-function checkForm(form)
+function checkForm(form) // Submit button clicked
 {
-    // validation fails if the input is blank
-    if(form.subject.value == "") {
-        alert("Error: Input is empty!");
-        form.subject.focus();
-        return false;
-    }
+    //
+    // check form input values
+    //
 
-    // regular expression to match only alphanumeric characters and spaces
-    var re = /^[\w ]+$/;
-
-    // validation fails if the input doesn't match our regular expression
-    if(!re.test(form.subject.value)) {
-        alert("Error: Input contains invalid characters!");
-        form.subject.focus();
-        return false;
-    }
-
-    // validation was successful
+    form.submit_btn.disabled = true;
+    form.submit_btn.value = '...';
     return true;
 }
