@@ -46,8 +46,8 @@
     <script src="assets/js/inview.js"></script>
     <script src="assets/js/animate.js"></script>
     <script src="assets/js/custom.js"></script>
+<!--    <script src="assets/js/checkForm.js"></script>-->
     <script src="assets/lang/messages.js"></script>
-    <script src="contactform.php"></script>
     <script src="components/veoautojuht.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
     <script src="components/navbar.js"></script>
@@ -373,7 +373,7 @@
                 <div class="row">
                     <div class="span12">
                         <div class="contactform">
-                            <form action="contactform.php" method="POST" role="form" class="contactForm" id="contact-form">
+                            <form action="https://script.google.com/macros/s/AKfycbyODiEkqavm_cMUZnnQXpQcCUfCHBsUgkqd1-da7MHv397OmbQ/exec" method="POST" role="form" class="gform" id="contact-form" onsubmit="return checkForm(this);">
                                 <div class="row">
                                     <div class="span6">
                                         <div class="field subject form-group">
@@ -385,18 +385,21 @@
                                                    :placeholder="$t('message.your_name')"/>
                                         </div>
                                         <div class="field your-email form-group">
-                                            <input type="text" class="form-control" name="mail"
-                                                   :placeholder="$t('message.your_email')"/>
+                                            <input type="text" class="form-control" name="email"
+                                                   :placeholder="$t('message.your_email')" required/>
                                         </div>
                                     </div>
                                     <div class="span6">
                                         <div class="field message form-group">
                                             <textarea class="form-control" name="message" rows="5"
-                                                      :placeholder="$t('message.your_message')"></textarea>
+                                                      :placeholder="$t('message.your_message')" required></textarea>
                                         </div>
                                         <input name="submit" type="submit" :value="$t('message.your_message_send')"
                                                class="btn btn-theme pull-left">
                                     </div>
+                                </div>
+                                <div style="display:none" class="thankyou_message">
+                                    <h2>{{ $t("message.thankyou_forletter") }}</h2>
                                 </div>
                             </form>
                         </div>
@@ -428,7 +431,7 @@
                         <p><a href="tel:+372 452 2002"><i class="icon-phone"></i> +372 452 2002</a></strong></p>
                         <p><a href="#contact">agri@speq.ee</a></strong></p>
                         <p class="copyright">
-                            <?php auto_copyright("2018");?> {{ $t("message.copyright") }}
+                            2018<script>new Date().getFullYear() > 2018 && document.write("-" + new Date().getFullYear());</script> {{ $t("message.copyright") }}
                         </p>
                     </div>
                 </div>
@@ -452,11 +455,6 @@
         }
     });
 </script>
-<?php function auto_copyright($year = 'auto'){ ?>
-    <?php if(intval($year) == 'auto'){ $year = date('Y'); } ?>
-    <?php if(intval($year) == date('Y')){ echo intval($year); } ?>
-    <?php if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); } ?>
-    <?php if(intval($year) > date('Y')){ echo date('Y'); } ?>
-<?php } ?>
+    <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 </body>
 </html>

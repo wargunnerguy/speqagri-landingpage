@@ -5,7 +5,7 @@ Vue.component('job_filled_already_redirect', {
     <h4>{{$t("message.position_filled")}}</h4>
     <div class="row">
         <div class="span11 text-center">
-            <button onclick="location.href='index.php'" class="btn btn-theme">{{$t("message.back_to_homepage")}}</button>
+            <button onclick="location.href='index.html'" class="btn btn-theme">{{$t("message.back_to_homepage")}}</button>
         </div>
     </div>
 </div>
