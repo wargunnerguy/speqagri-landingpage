@@ -135,6 +135,22 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span6 offset3">
+                    <p><a href="tel:+372 452 2002"><i class="icon-phone"></i> +372 452 2002</a></strong></p>
+                    <p><a href="#contact">agri@speq.ee</a></strong></p>
+                    <p class="copyright">
+                        2018
+                        <script>new Date().getFullYear() > 2018 && document.write("- " + new Date().getFullYear());</script>
+                        {{ $t("message.copyright") }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- ./container -->
+    </footer>
 </div>
 
 <!-- Start running your app -->
@@ -152,11 +168,5 @@
         }
     });
 </script>
-    <?php function auto_copyright($year = 'auto'){ ?>
-        <?php if(intval($year) == 'auto'){ $year = date('Y'); } ?>
-        <?php if(intval($year) == date('Y')){ echo intval($year); } ?>
-        <?php if(intval($year) < date('Y')){ echo intval($year) . ' - ' . date('Y'); } ?>
-        <?php if(intval($year) > date('Y')){ echo date('Y'); } ?>
-    <?php } ?>
 </body>
 </html>
