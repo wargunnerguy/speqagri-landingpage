@@ -31,8 +31,8 @@ Vue.component('navbar', {
                     <!-- navigation -->
                     <nav class="pull-right nav-collapse collapse">
                         <ul id="menu-main" class="nav">
-<!--                             <li><a v-bind:title="$t('message.job_vacancies')" href="index.html#job_vacancies">{{ $t("message.job_vacancies") }} <span class="badge badge-important badge-circled">0</span></a></li>-->
-                            <li><a v-bind:title="$t('message.job_vacancies')" href="index.html#job_vacancies">{{ $t("message.job_vacancies") }} <span class="badge badge-warning badge-circled">1</span></a></li>
+<!--                             <li><a v-bind:title="$t('message.job_vacancies')" href="index.html#tööpakkumised">{{ $t("message.job_vacancies") }} <span class="badge badge-important badge-circled">0</span></a></li>-->
+                            <li><a v-bind:title="$t('message.job_vacancies')" href="index.html#tööpakkumised">{{ $t("message.job_vacancies") }} <span class="badge badge-warning badge-circled">1</span></a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {{$t('message.Services')}}
