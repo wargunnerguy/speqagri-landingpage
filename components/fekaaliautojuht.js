@@ -20,7 +20,6 @@ Vue.component('fekaaliautojuht', {
                         <h5>{{$t("message.requirements_for_candidate")}}</h5>
                         <ul style="list-style-type:circle;">
                             <li>{{$t("message.cat_corresponding_to_job_offer")}}</li>
-                            <li>{{$t("message.previous_experience")}}</li>
                             <li>{{$t("message.proficiency_est")}}</li>
                             <li>{{$t("message.correctness_responsibility_accuracy")}}</li>
                         </ul>
