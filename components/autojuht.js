@@ -1,4 +1,4 @@
-Vue.component('fekaaliautojuht', {
+Vue.component('autojuht', {
     template: `
 <div id="job_vacancies_box" class="well well-large section green joboffer">
 <h4>{{$t("message.we_offer_work_to")}}{{$t("message.to_fecal_truck_driver")}}</h4>
@@ -8,8 +8,8 @@ Vue.component('fekaaliautojuht', {
 <!--                    <span class="notify-badge">{{$t("message.new")}}</span>-->
 <!--                    <span class="badge badge-success notify-badge-active">{{$t("message.active")}}</span>-->
                     <picture>
-                        <source srcset="assets/img/job_offer_thumbnails/fekaaliautojuht_360.webp" type="image/webp">
-                        <source srcset="assets/img/job_offer_thumbnails/fekaaliautojuht_360.png" type="image/png">
+                        <source srcset="assets/img/job_offer_thumbnails/autojuht_360.webp" type="image/webp">
+                        <source srcset="assets/img/job_offer_thumbnails/autojuht_360.png" type="image/png">
                         <img src="assets/img/masinad/machine_alt.jpg" alt="Pilt puudu!">
                     </picture>
                 </div>
@@ -40,8 +40,8 @@ Vue.component('fekaaliautojuht', {
             </div>
             <div class="span6">               
                 <h5>{{$t("message.job_offer_info")}}</h5>
-                <div class="fb-share-button" data-href="https://speqagri.ee/fekaaliautojuht.html" data-layout="button_count" data-size="large">
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspeqagri.ee%2Ffekaaliautojuht.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >Jaga
+                <div class="fb-share-button" data-href="https://speqagri.ee/autojuht.html" data-layout="button_count" data-size="large">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspeqagri.ee%2Fautojuht.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >Jaga
                     </a>
                 </div>
             </div>
