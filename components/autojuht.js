@@ -8,7 +8,6 @@ Vue.component('autojuht', {
 <!--                    <span class="notify-badge">{{$t("message.new")}}</span>-->
 <!--                    <span class="badge badge-success notify-badge-active">{{$t("message.active")}}</span>-->
                     <picture>
-                        <source srcset="assets/img/job_offer_thumbnails/autojuht_360.webp" type="image/webp">
                         <source srcset="assets/img/job_offer_thumbnails/autojuht_360.png" type="image/png">
                         <img src="assets/img/masinad/machine_alt.jpg" alt="Pilt puudu!">
                     </picture>
