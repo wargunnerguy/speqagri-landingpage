@@ -42,7 +42,7 @@ Vue.component('fekaaliautojuht', {
             <div class="span6">               
                 <h5>{{$t("message.job_offer_info")}}</h5>
                 <div class="fb-share-button" data-href="https://speqagri.ee/fekaaliautojuht.html" data-layout="button_count" data-size="large">
-                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspeqagri.ee%2Ffekaaliautojuht.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >Share
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspeqagri.ee%2Ffekaaliautojuht.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >Jaga
                     </a>
                 </div>
             </div>
