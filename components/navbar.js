@@ -38,18 +38,9 @@ Vue.component('navbar', {
                                     {{$t('message.Services')}}
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-submenu">
-                                        <a class="home-slide-content" v-html="$t('message.agricultural_service_html')"/>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="index.html#contact">{{$t('message.chemical_crop_protection_service')}}</a></li>
-                                            <li><a href="index.html#contact">{{$t('message.harvesting_service')}}</a></li>
-                                            <li><a href="index.html#contact">{{$t('message.sowing_service')}}</a></li>
-                                            <li><a href="index.html#contact">{{$t('message.sowing_preparation_service')}}</a></li>
-                                            <li><a href="index.html#contact">{{$t('message.plowing_service')}}</a></li>
-                                            <li><a href="index.html#contact">{{$t('message.grain_drying_service')}}</a></li>
-                                            <li><a href="index.html#contact">{{$t('message.grain_transport_service')}}</a></li>
-                                        </ul>
-                                    </li>
+                                    <li>
+                                        <a href="index.html#contact" class="home-slide-content" v-html="$t('message.maintenance_service_html')"/>
+                                   </li>
                                     <li>
                                         <a href="index.html#contact" class="home-slide-content" v-html="$t('message.excavation_service_html')"/>
                                    </li>

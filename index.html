@@ -116,7 +116,7 @@
                                     <p class="home-slide-content" v-html="$t('message.rental_service_html')"/>
                                 </li>
                                 <li>
-                                    <p class="home-slide-content" v-html="$t('message.agricultural_service_html')"/>
+                                    <p class="home-slide-content" v-html="$t('message.maintenance_service_html')"/>
                                 </li>
                                 <li>
                                     <p class="home-slide-content" v-html="$t('message.snow_removal_service_html')"/>
@@ -136,15 +136,13 @@
             <!-- Four columns -->
             <!-- First row -->
             <div class="row brand">
-                <a href="#tööpakkumised">
-                    <div class="span3 animated-slow flyIn">
-                        <div class="service-box">
-                            <img src="assets/img/icons/jobs.png" alt=""/>
-                            <h2>{{ $t("message.job_vacancies") }}</h2>
-                            <p>{{ $t("message.job_vacancies_text") }}</p>
-                        </div>
+                <div class="span3 animated-fast flyIn">
+                    <div class="service-box">
+                        <img src="assets/img/icons/maintenance.png" alt=""/>
+                        <h2>{{ $t("message.maintenance_service") }}</h2>
+                        <p>{{ $t("message.maintenance_service_text") }}</p>
                     </div>
-                </a>
+                </div>
                 <div class="span3 animated-fast flyIn">
                     <div class="service-box">
                         <img src="assets/img/icons/snow-flake-icon.png" alt=""/>
@@ -203,13 +201,15 @@
             </div>
             <!-- Third row -->
             <div class="row brand">
-                <div class="span3 animated-fast flyIn">
-                    <div class="service-box">
-                        <img src="assets/img/icons/circle-tractor.png" alt=""/>
-                        <h2>{{ $t("message.agricultural_service") }}</h2>
-                        <p>{{ $t("message.agricultural_service_text") }}</p>
+                <a href="#tööpakkumised">
+                    <div class="span3 animated-slow flyIn">
+                        <div class="service-box">
+                            <img src="assets/img/icons/jobs.png" alt=""/>
+                            <h2>{{ $t("message.job_vacancies") }}</h2>
+                            <p>{{ $t("message.job_vacancies_text") }}</p>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <div class="span3 animated-slow flyIn">
                     <a href="#machinery">
                         <div class="service-box">
