@@ -3,8 +3,9 @@ Vue.component('autoremont', {
 <div id="job_vacancies_box" class="well well-large section green joboffer">
     <a onclick="location.href='index.html'">
         <picture>
-            <source srcset="assets/img/fb_share_pics/remont.jpg" type="image/png">
-            <img src="assets/img/masinad/machine_alt.jpg" alt="Pilt puudu!">
+            <a href="assets/img/fb_share_pics/remont.jpg" class="progressive replace">
+                <img src="assets/img/fb_share_pics/remont_tiny.jpg" class="preview" alt="image"/>
+            </a>
         </picture>
     </a>
     <div class="row"></div>

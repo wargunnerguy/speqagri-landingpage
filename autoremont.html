@@ -56,7 +56,6 @@
 	<script src="components/autoremont.js"></script>
 	<script src="assets/js/progressive-image.min.js"></script>
 	<script src="components/job_filled_already_redirect.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"></script>
 	<script src="components/navbar.js"></script>
 </head>
 <body>
@@ -94,7 +93,27 @@
 	<navbar></navbar>
 	<section id="job_offer_section" class="section orange">
 		<div class="container">
-			     <autoremont></autoremont>
+			<div id="job_vacancies_box" class="well well-large section green joboffer">
+				<picture>
+					<a onclick="location.href='index.html'" href="assets/img/fb_share_pics/remont.jpg" class="progressive replace">
+						<img onclick="location.href='index.html'" src="assets/img/fb_share_pics/remont_tiny.png" class="preview" alt="image"/>
+					</a>
+				</picture>
+				<div class="row"></div>
+				<div class="row">
+					<div class="text-center">
+						<div class="fb-share-button" data-href="https://speqagri.ee/autoremont.html" data-layout="button_count" data-size="large">
+							<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspeqagri.ee%2Fautoremont.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" >Share
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="text-center">
+						<button onclick="location.href='index.html'" class="btn btn-theme">{{$t("message.back_to_homepage")}}</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
