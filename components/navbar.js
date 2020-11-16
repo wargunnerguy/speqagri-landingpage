@@ -52,6 +52,9 @@ Vue.component('navbar', {
                                         </ul>
                                     </li>
                                     <li>
+                                        <a href="index.html#contact" class="home-slide-content" v-html="$t('message.car_repair_service_html')"/>
+                                   </li>
+                                    <li>
                                         <a href="index.html#contact" class="home-slide-content" v-html="$t('message.excavation_service_html')"/>
                                    </li>
                                     <li class="dropdown-submenu">
