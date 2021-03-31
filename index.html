@@ -97,6 +97,9 @@
                         <div id="main-flexslider" class="flexslider">
                             <ul class="slides">
                                 <li>
+                                    <p class="home-slide-content" v-html="$t('message.car_rental_service_html')"/>
+                                </li>
+                                <li>
                                     <p class="home-slide-content" v-html="$t('message.landscaping_service_html')"/>
                                 </li>
                                 <li>
@@ -138,6 +141,15 @@
             <!-- Four columns -->
             <!-- First row -->
             <div class="row brand">
+                <a onclick="location.href='autorent.html'">
+                    <div class="span3 animated-fast flyIn">
+                        <div class="service-box">
+                            <img src="assets/img/icons/car_rental.png" alt=""/>
+                            <h2>{{ $t("message.car_rental_service") }}</h2>
+                            <p>{{ $t("message.car_rental_service_text") }}</p>
+                        </div>
+                    </div>
+                </a>
                 <a onclick="location.href='autoremont.html'">
                     <div class="span3 animated-fast flyIn">
                         <div class="service-box">
@@ -156,13 +168,7 @@
                         </div>
                     </div>
                 </a>
-                <div class="span3 animated-fast flyIn">
-                    <div class="service-box">
-                        <img src="assets/img/icons/snow-flake-icon.png" alt=""/>
-                        <h2>{{ $t("message.snow_removal_service") }}</h2>
-                        <p>{{ $t("message.snow_removal_service_text") }}</p>
-                    </div>
-                </div>
+
                 <a href="https://fekaaliabi.ee">
                     <div class="span3 animated-slow flyIn">
                         <div class="service-box">
@@ -230,6 +236,13 @@
                         <img src="assets/img/icons/vector-lawn-mower.png" alt=""/>
                         <h2>{{ $t("message.landscaping_service") }}</h2>
                         <p>{{ $t("message.landscaping_service_text") }}</p>
+                    </div>
+                </div>
+                <div class="span3 animated-fast flyIn">
+                    <div class="service-box">
+                        <img src="assets/img/icons/snow-flake-icon.png" alt=""/>
+                        <h2>{{ $t("message.snow_removal_service") }}</h2>
+                        <p>{{ $t("message.snow_removal_service_text") }}</p>
                     </div>
                 </div>
             </div>
