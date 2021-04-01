@@ -38,6 +38,9 @@ Vue.component('navbar', {
                                     {{$t('message.Services')}}
                                 </a>
                                 <ul class="dropdown-menu">
+                                   <li>
+                                        <a href="autorent.html" class="home-slide-content" v-html="$t('message.car_rental_service_html')"/>
+                                   </li>
                                    <li class="dropdown-submenu">
                                         <a href="index.html#contact" class="home-slide-content" v-html="$t('message.maintenance_service_html')"/>
                                         <ul class="dropdown-menu">
@@ -52,7 +55,7 @@ Vue.component('navbar', {
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="index.html#contact" class="home-slide-content" v-html="$t('message.car_repair_service_html')"/>
+                                        <a href="autoremont.html" class="home-slide-content" v-html="$t('message.car_repair_service_html')"/>
                                    </li>
                                     <li>
                                         <a href="index.html#contact" class="home-slide-content" v-html="$t('message.excavation_service_html')"/>
