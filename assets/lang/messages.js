@@ -200,7 +200,7 @@ const messages = {
             sowing_preparation_service: 'Sowing preparation service',
             sponsor_heading_1: 'The construction of Tammeküla repair hall',
             sponsor_message_1: 'The purpose of the repair hall was to create a business environment that takes into account today\'s needs, modern fields of work and flexible working methods, that provides more jobs close to home and bigger employment of the inhabitants.' ,
-            sponsor_heading_2: 'The construction of Tammeküla repair hall',
+            sponsor_heading_2: '',
             sponsor_message_2: 'In 2021, a compressor and a welding machine were acquired, with the help of which better opportunities have been created for the maintenance and preservation of equipment and for the further development of the company.' ,
             tanker: 'tanker',
             telehandler_service: 'Telehandler service',
