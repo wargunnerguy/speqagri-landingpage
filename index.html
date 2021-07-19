@@ -98,6 +98,9 @@
                         <div id="main-flexslider" class="flexslider">
                             <ul class="slides">
                                 <li>
+                                    <p class="home-slide-content" v-html="$t('message.bulk_material_transport_service_html')"/>
+                                </li>
+                                <li>
                                     <p class="home-slide-content" v-html="$t('message.car_rental_service_html')"/>
                                 </li>
                                 <li>
@@ -142,6 +145,15 @@
             <!-- Four columns -->
             <!-- First row -->
             <div class="row brand">
+                <a onclick="location.href='kallur.html'">
+                    <div class="span3 animated-fast flyIn">
+                        <div class="service-box">
+                            <img src="assets/img/icons/tipper.png" alt=""/>
+                            <h2>{{ $t("message.bulk_material_transport_service") }}</h2>
+                            <p>{{ $t("message.bulk_material_transport_service_text") }}</p>
+                        </div>
+                    </div>
+                </a>
                 <a onclick="location.href='autorent.html'">
                     <div class="span3 animated-fast flyIn">
                         <div class="service-box">
@@ -166,16 +178,6 @@
                             <img src="assets/img/icons/car_repair.png" alt=""/>
                             <h2>{{ $t("message.car_repair_service") }}</h2>
                             <p>{{ $t("message.car_repair_service_text") }}</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://fekaaliabi.ee">
-                    <div class="span3 animated-slow flyIn">
-                        <div class="service-box">
-                            <img src="assets/img/icons/vac-truck.png" alt=""/>
-                            <h2>{{ $t("message.winding_service") }}</h2>
-                            <p>{{ $t("message.winding_service_text") }}</p>
                         </div>
                     </div>
                 </a>
@@ -246,6 +248,17 @@
                         <p>{{ $t("message.snow_removal_service_text") }}</p>
                     </div>
                 </div>
+            </div>
+            <div class="row brand">
+                <a href="https://fekaaliabi.ee">
+                    <div class="span3 animated-slow flyIn">
+                        <div class="service-box">
+                            <img src="assets/img/icons/vac-truck.png" alt=""/>
+                            <h2>{{ $t("message.winding_service") }}</h2>
+                            <p>{{ $t("message.winding_service_text") }}</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>

@@ -19,7 +19,7 @@ Vue.component('navbar', {
         }
     },
     template:
-    `<div class="navbar-wrapper">
+        `<div class="navbar-wrapper">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -38,6 +38,9 @@ Vue.component('navbar', {
                                     {{$t('message.Services')}}
                                 </a>
                                 <ul class="dropdown-menu">
+                                   <li>
+                                        <a href="kallur.html" class="home-slide-content" v-html="$t('message.bulk_material_transport_service_html')"/>
+                                   </li>
                                    <li>
                                         <a href="autorent.html" class="home-slide-content" v-html="$t('message.car_rental_service_html')"/>
                                    </li>
