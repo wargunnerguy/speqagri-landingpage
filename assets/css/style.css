@@ -1966,7 +1966,6 @@ i.icon-white {
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7); /* Black see-through */
-    color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
     opacity: 0;
@@ -1980,4 +1979,19 @@ i.icon-white {
 /* When you mouse over the container, fade in the overlay title */
 .overlay-container:hover .overlay {
     opacity: 1;
+}
+
+video {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.85);
+}
+
+a.progressive  {
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.85);
+}
+
+.overlay {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
