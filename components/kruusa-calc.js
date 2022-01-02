@@ -5,7 +5,7 @@ Vue.component('kruusa-calc', {
 			selectedAmount: 5,
 			selectedDistance: 20,
 			transportStartPrice: 50,
-			transportKmPrice: 1,
+			transportKmPrice: 2,
 			k2ibemaks: 0.2,
 			totalTransportPrice: 0.0,
 			totalProductPrice: 0.0,
@@ -98,7 +98,7 @@ Vue.component('kruusa-calc', {
       <div class="hero-unit" style="background-color: black">
         <h3 v-if="!selectedProductId"> Vali tabelist toode, mille hinda soovid teada</h3>
         <div v-else>
-          <h3>Ligikaudne hind: {{ products.find(product => product.id === selectedProductId).name }}</h3>
+          <h3>{{ products.find(product => product.id === selectedProductId).name }} - ligikaudne hind: </h3>
           <div class="row-fluid">
             <div class="span3">Kogus (min 5t)</div>
             <div class="span6">
