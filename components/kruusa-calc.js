@@ -70,21 +70,21 @@ Vue.component('kruusa-calc', {
     <!-- row-t title -->
     <div class="row-t title">
       <ul>
-        <li>Toode</li>
-        <li>Hind/t</li>
-        <li>Km 20%</li>
-        <li>Hind+km/t</li>
-        <li>Vali</li>
+        <li style="width: 35%">Toode</li>
+        <li style="width: 17%">Hind</li>
+        <li style="width: 17%">Km 20%</li>
+        <li style="width: 17%">Hind+km</li>
+        <li style="width: 14%">Vali</li>
       </ul>
     </div>
     <!-- row-t 3 -->
     <article v-for="product in products" :key="product.id" class="row-t" :class="product.type">
       <ul>
-        <label :for="'product_' + product.id">
-          <li><a href="#">{{ productFullName(product) }}</a></li>
-          <li>{{ product.pricePerTon }} €/t</li>
-          <li>{{ calcTax(product.pricePerTon, 2) }} €</li>
-          <li>{{ calcTotal(product.pricePerTon, 2) }} €/t</li>
+        <label :for="'product_' + product.id" >
+          <li style="width: 35%"><a href="#">{{ productFullName(product) }}</a></li>
+          <li style="width: 17%">{{ product.pricePerTon }} €/t</li>
+          <li style="width: 17%">{{ calcTax(product.pricePerTon, 2) }} €/t</li>
+          <li style="width: 17%">{{ calcTotal(product.pricePerTon, 2) }} €/t</li>
           <input :id="'product_' + product.id" type="radio" :name="product.name" v-model="selectedProductId"
                  :value="product.id">
         </label>
@@ -105,7 +105,7 @@ Vue.component('kruusa-calc', {
               <input type="range" min="5" max="200" value="5" step="0.1" class="slider" v-model="selectedAmount">
             </div>
             <div class="span1 input-append">
-              <input id="appendedInput" type="number" v-model="selectedAmount">
+              <input style="width: 3.5em" id="appendedInput" type="number" v-model="selectedAmount">
               <span class="add-on">tonni</span>
             </div>
           </div>
@@ -115,7 +115,7 @@ Vue.component('kruusa-calc', {
               <input type="range" min="0" max="200" value="5" step="0.1" class="slider" v-model="selectedDistance">
             </div>
             <div class="span1 input-append">
-              <input id="appendedInput" type="number" v-model="selectedDistance">
+              <input style="width: 3.5em" id="appendedInput" type="number" v-model="selectedDistance">
               <span class="add-on">km</span>
             </div>
           </div>
