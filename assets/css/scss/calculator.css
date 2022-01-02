@@ -16,11 +16,11 @@
 }
 
 .mlb a {
-  color: #52d29a;
+  color: #1bac91;
 }
 
 .mlb a:hover {
-  color: #279766;
+  color: #0d5447;
 }
 
 .nhl a {
@@ -44,7 +44,7 @@
   width: 100%;
   margin: 0 auto 0 auto;
   padding: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(30, 30, 30, 0.9);
   color: rgba(255, 255, 255, 0.9);
   overflow: hidden;
   position: relative;
@@ -78,10 +78,12 @@
 
 .title ul li {
   padding: 15px 13px;
+  font-weight: bold;
 }
 
 .row-t ul li {
   padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* rows */
@@ -96,7 +98,7 @@
 }
 
 .row-t:hover {
-  background-color: rgba(26, 26, 26, 0.9);
+  background-color: rgba(56, 56, 56, 0.9);
   height: 65px;
 }
 @media only screen and (max-width: 767px) {
@@ -114,13 +116,13 @@
   padding: 25px 0 5px 0;
   height: 45px;
   font-size: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(30, 30, 30, 0.9);
   border-left: 3px solid rgba(255, 255, 255, 0.9);
 }
 
 .title:hover {
   height: 45px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(30, 30, 30, 0.9);
   border-left: 3px solid rgba(255, 255, 255, 0.9);
 }
 
@@ -139,11 +141,11 @@
 }
 
 .mlb {
-  border-left: 3px solid #1d6e4b;
+  border-left: 3px solid #062822;
 }
 
 .mlb:hover {
-  border-left: 3px solid #52d29a;
+  border-left: 3px solid #1bac91;
 }
 
 .nhl {
@@ -197,7 +199,7 @@
 }
 
 .fadeIn:hover {
-  background-color: rgba(26, 26, 26, 0.9);
+  background-color: rgba(56, 56, 56, 0.9);
 }
 
 /* row-t two - fadeOut */
@@ -324,12 +326,79 @@ ul.more-content li {
   }
   20% {
     opacity: 1;
-    color: #52d29a;
+    color: #1bac91;
   }
   100% {
     opacity: 1;
     color: rgba(255, 255, 255, 0.9);
   }
+}
+.slidecontainer {
+  width: 100%;
+  /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 100%;
+  /* Full-width */
+  height: 25px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #1bac91;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  /* Set a specific slider handle width */
+  height: 25px;
+  /* Slider handle height */
+  background: #1bac91;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+}
+
+.add-on {
+  color: rgba(30, 30, 30, 0.9);
+  font-weight: bold !important;
+  background-color: #1bac91 !important;
+}
+
+select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=calculator.css.map */
