@@ -70,11 +70,11 @@ Vue.component('kruusa-calc', {
     <!-- row-t title -->
     <div class="row-t title">
       <ul>
-        <li style="width: 35%">Toode</li>
-        <li style="width: 17%">Hind</li>
-        <li style="width: 17%">Km 20%</li>
-        <li style="width: 17%">Hind+km</li>
-        <li style="width: 14%">Vali</li>
+        <li style="width: 35%">{{ $t("message.calc_product") }}</li>
+        <li style="width: 17%">{{ $t("message.calc_price") }}</li>
+        <li style="width: 17%">{{ $t("message.calc_tax") }} 20%</li>
+        <li style="width: 17%">{{ $t("message.calc_price_and_tax") }}</li>
+        <li style="width: 14%">{{ $t("message.calc_select") }}</li>
       </ul>
     </div>
     <!-- row-t 3 -->
