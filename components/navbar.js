@@ -108,7 +108,7 @@ Vue.component('navbar', {
                             <li>
                                 <a v-bind:title="$t('message.contact')" href="index.html#contact">{{ $t("message.contact") }}</a>
                             </li>
-                            <li><a v-bind:title="$t('message.calculator')" href="kalkulaator.html">{{ $t("message.calculator") }}</a></li>
+<!--                            <li><a v-bind:title="$t('message.calculator')" href="kalkulaator.html">{{ $t("message.calculator") }}</a></li>-->
                             <li>
                                 <a @click=changeToEstonian() href="#" onclick="event.preventDefault();"><img src="assets/img/flags/et.png"/></a>
                             </li>
